@@ -10,7 +10,7 @@
 // 	return 0;
 // }
 
-
+///////////////////////////////////////////////////////////////// CHAPTER 1 /////////////////////////////////////////////////////////////////////////
 // 获取C++版本
 long getCPPStandard()
 {
@@ -30,15 +30,28 @@ long getCPPStandard()
 
 void foo(int a){}
 
-int main(int argc, char* argv[])
+void testType()
 {
-    std::cout << "Hello World!\n";
-    
     unsigned int a = 10;
     foo(a); // 类型强制转换
 
     int width = 5.0;
     // int width1 { 5.0 };  // 禁止隐式转换
+
+    std::cin >> width;
+    std::cout << width << '\n';
+
+    
+}
+
+///////////////////////////////////////////////////////////////// CHAPTER 2 /////////////////////////////////////////////////////////////////////////
+
+
+
+int main(int argc, char* argv[])
+{
+    std::cout << "Hello World!\n";
+    testType();
     
     return 0;
 }
